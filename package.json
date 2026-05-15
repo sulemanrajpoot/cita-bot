@@ -1,0 +1,17 @@
+{
+  "name": "cita-bot",
+  "version": "1.0.0",
+  "description": "Auto appointment checker for Spanish police fingerprint booking",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "install-browsers": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "playwright": "^1.44.0",
+    "nodemailer": "^6.9.13"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
