@@ -1,7 +1,8 @@
 [build]
 builder = "nixpacks"
+buildCommand = "npm install && npx playwright install --with-deps chromium"
 
 [deploy]
-startCommand = "npx playwright install chromium && npm start"
+startCommand = "node bot.js"
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 10
